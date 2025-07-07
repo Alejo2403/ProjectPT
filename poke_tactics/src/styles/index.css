@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+@theme {
+  --red-pri: #FF0000;
+  --red-sec: #CC0000;
+  --blue-pri: #3763AF;
+  --blue-sec: #232C5F;
+  --yellow-pri: #FFCC01;
+  --yellow-sec: #B3A125;
+}
