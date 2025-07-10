@@ -11,8 +11,8 @@ const SETS = [
   { id: "sv6", name: "Twilight Masquerade", image: "Sets/SetTM.png" },
   { id: "sv6pt5", name: "Shrouded Fable", image: "Sets/SetSF.png" },
   { id: "sv7", name: "Stellar Crown", image: "Sets/SetSC.png" },
-  { id: "sv8", name: "Surging Sparks", image: "Sets/SetSS.png" },
-  { id: "sv8pt5", name: "Prismatic Evolutions", image: "Sets/SetPEv.png" },
+  { id: "sv8", name: "Surging Sparks", image: "Sets/SetSP.png" },
+  /*{ id: "sv8pt5", name: "Prismatic Evolutions", image: "Sets/SetPEv.png" },*/
   { id: "sv9", name: "Journey Together", image: "Sets/SetJT.png" },
   { id: "sv10", name: "Destined Rivals", image: "Sets/SetDR.png" }
 ]
@@ -27,7 +27,7 @@ const SetSelector = ({selectedSet, setSelectedSet}) => {
             onClick={() => setDropdownOpen(!dropdownOpen)}
             className="flex items-center border border-gray-300 rounded shadow bg-white h-full hover:bg-gray-50"
             >
-                <img src={selectedSet.image} alt={selectedSet.name} className="w-55 h-15 m-1 object-contain"/>
+                <img src={selectedSet.image} alt={selectedSet.name} className="w-45 h-15 m-1 object-contain"/>
             </button>
 
             {/*Select*/}

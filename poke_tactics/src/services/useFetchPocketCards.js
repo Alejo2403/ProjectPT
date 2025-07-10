@@ -24,6 +24,7 @@ const useFetchPocketCards = (setId = "sv1", page = 1, pageSize = 30) => {
           }
         });
         setCards(res.data.data);
+        console.log(res.data.data);
         setTotalCount(res.data.totalCount);
       } catch (error) {
         console.error("Error fetching cards:", error);
