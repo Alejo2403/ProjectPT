@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div className="menu">
       <div className="logo bg-[var(--blue-pri)] justify-center flex items-center h-16">
-        <img src="/src/assets/images/LogoTCW.png" alt="Logo" className="h-14 sm:h-16 md:h-18"/>
+        <img src="/LogoTCW.png" alt="Logo" className="h-14 sm:h-16 md:h-18"/>
         <button
           className="text-[var(--yellow-pri)] text-2xl font-bold md:hidden items-center justify-center ml-2"
           onClick={() => setMenuOpen(!menuOpen)}
