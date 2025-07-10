@@ -1,8 +1,10 @@
-import React from 'react'
+import { useState } from "react";
 
 const Gyms = () => {
   return (
-    <div>Gyms</div>
+    <>
+      
+    </>
   )
 }
 

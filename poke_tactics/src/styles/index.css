@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@theme {
+:root {
   --red-pri: #FF0000;
   --red-sec: #CC0000;
   --blue-pri: #3763AF;
