@@ -7,4 +7,12 @@
   --blue-sec: #232C5F;
   --yellow-pri: #FFCC01;
   --yellow-sec: #B3A125;
+  
+  /*Login*/
+
+  --Lblue-pri:#3763AF;
+  --Lleft-pri:#232C5F;
+  --Lright-pri:#FFFFFF;
+  --Ltitle:#FFCC01;
+  --LtitlePokemon:#AA30C8;
 }
