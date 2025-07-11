@@ -27,17 +27,22 @@ function App() {
   })
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="Blog/" element={<Blog />} />
-        <Route path="NavBar/" element={<NavBar />} />
-        <Route path="/pokedex" element={<Pokedex />} />
-        <Route path="/gyms" element={<Gyms />} />
-        <Route path="/lab" element={<Lab />} />
-        <Route path="/metas" element={<Metas />} />
-      </Routes>
-    </Router>
+  <Router>
+  {user && <NavBar />} 
+    <Routes>
+      {user ? (
+        <>
+          <Route path="/" element={<Blog />} />
+          <Route path="/pokedex" element={<Pokedex />} />
+          <Route path="/gyms" element={<Gyms />} />
+          <Route path="/lab" element={<Lab />} />
+          <Route path="/metas" element={<Metas />} />
+        </>
+      ) : (
+        <Route path="*" element={<Login />} />
+      )}
+    </Routes>
+  </Router>
   )
 }
 

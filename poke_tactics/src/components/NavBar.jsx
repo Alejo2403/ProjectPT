@@ -1,4 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
+import appFirebase from '../credentials'
+import {getAuth,signOut} from  'firebase/auth'
+const auth = getAuth(appFirebase)
+
 
 const NavBar = () => {
 
@@ -18,6 +22,7 @@ const NavBar = () => {
         <Link to="/lab" className={isActive('/lab') ? 'border-b-2 border-yellow-400' : ''}>Laboratory</Link>
         <Link to="/metas" className={isActive('/metas') ? 'border-b-2 border-yellow-400' : ''}>Metas</Link>
       </nav>
+      <div className="flex end-4"><button onClick={()=>signOut(auth)}>Log Out</button></div>
     </div>
   )
 }
